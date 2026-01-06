@@ -1,6 +1,5 @@
 # ImageNet Vision Model Comparison
 
-🎉 **Training completed successfully!**
 
 The full experimental pipeline ran to completion with all 9 model/data configurations (3 models × 3 data fractions).
 
