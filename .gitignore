@@ -1,0 +1,7 @@
+.venv
+__pycache__
+.ipynb_checkpoints
+
+# Model files (uploaded to Hugging Face)
+*.pth
+results/*.pth
