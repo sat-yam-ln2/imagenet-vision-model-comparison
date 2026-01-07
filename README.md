@@ -43,7 +43,39 @@ Below are key plots generated from the experiments:
 ### Convergence Speed
 ![Convergence Speed](results/convergence_speed.png)
 
-## How to Reproduce
+## How to Run the Application Interface
+
+### Step 1: Download Trained Models
+Before running the application, you need to download the pre-trained model checkpoints:
+
+1. Visit the HuggingFace model repository: **https://huggingface.co/quantumln314/imagenet-vision-models**
+2. Download all 9 model checkpoint files (`.pth` files):
+   - `vit_1pct_best.pth`
+   - `vit_5pct_best.pth`
+   - `vit_10pct_best.pth`
+   - `swin_1pct_best.pth`
+   - `swin_5pct_best.pth`
+   - `swin_10pct_best.pth`
+   - `convnext_1pct_best.pth`
+   - `convnext_5pct_best.pth`
+   - `convnext_10pct_best.pth`
+
+3. Create a `results/` folder in the project root if it doesn't exist
+4. Place all downloaded `.pth` files inside the `results/` folder
+
+### Step 2: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Run the Application
+```bash
+python app.py
+```
+
+The application will launch at `http://localhost:7860` where you can upload images and see predictions from all 9 models.
+
+## How to Reproduce Training
 See the notebook `image_net_compare.ipynb` for the full pipeline, code, and instructions.
 
 ## Files
